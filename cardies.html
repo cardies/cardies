@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cardies.css">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="cardies.js">
+    </script>
+    <title>Cardies</title>
+</head>
+<body>
+    <div class="authorize" id="authorize">
+        <input type="text" class="passwd" id="passwd" placeholder="Enter Password">
+        <button class="auth" id="auth" onclick="auth()">Authorize</button>
+    </div>
+    <div class="cards hide">
+        <input type="text" id="cname" class="cname" placeholder="Enter Bank Name">
+        <button class="getcard" id="getcard" onclick="carddet()">Get Card</button>
+    </div>
+    <div class="card hide" id="card">
+        <p class="bname" id="bname">Bname</p>
+        <p onclick="copyc()" class="cnum" id="cnum">xxxx-xxxx-xxxx-xxxx</p>
+        <div class="l">
+        <p onclick="copyex()" class="expiry" id="expiry">xx/xx</p> 
+         <strong onclick="copycvv()" class="cvv" id="cvv">xxx</strong></div>
+        <p class="ctype" id="ctype">VISA</p>
+    </div>
+</body>
+</html>
