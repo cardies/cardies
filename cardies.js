@@ -79,6 +79,7 @@ $(document).ready(function(){
 });
 function carddet(){
         came=document.getElementById("cname").value;
+        came=came.toLowerCase();
         document.getElementById("bname").innerHTML=bname[came];
         document.getElementById("ctype").innerHTML=ctype[came];
         document.getElementById("expiry").innerHTML=expiry[came];
