@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cardies.css">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="cardies.js">
+    </script>
+    <title>Cardies</title>
+</head>
+<body>
+    <button id="back" class="back hide"><i class="fa fa-arrow-left"></i></button>
+    <div class="authorize" id="authorize">
+        <input type="password" class="passwd" id="passwd" placeholder="Enter Password">
+        <button class="auth" id="auth" onclick="auth()">Authorize</button>
+    </div>
+    <div class="cards hide">
+        <select name="cname" id="cname" class="cname">
+            <option id="selop" class="selop" value="sbi">State Bank Of India</option>
+            <option id="selop" class="selop" value="kotak">Kotak Mahindra Bank</option>
+            <option id="selop" class="selop" value="paytm">Paytm Payments Bank</option>
+            <option id="selop" class="selop" value="indusind">Indusind Bank</option>
+            <option id="selop" class="selop" value="payzapp">Payzapp Wallet Card</option>
+            <option id="selop" class="selop" value="irctc">IRCTC E-Wallet Card</option>
+            <option id="selop" class="selop" value="slice pay">Slice-pay Card</option>
+            <option id="selop" class="selop" value="fincare">Fincare Payments Bank</option>
+        </select>
+        <button class="getcard" id="getcard" onclick="carddet()">Get Card</button>
+    </div>
+
+    <div class="card hide" id="card">
+        <p class="bname" id="bname">Bname</p>
+        <p onclick="copyc()" class="cnum" id="cnum">xxxx-xxxx-xxxx-xxxx</p>
+        <div class="l">
+        <p onclick="copyex()" class="expiry" id="expiry">xx/xx</p> 
+         <strong onclick="copycvv()" class="cvv" id="cvv">xxx</strong></div>
+        <p class="ctype" id="ctype">VISA</p>
+    </div>
+    <div class="details hide" id="details">
+        <p class="ano" id="ano">67358876454323</p>   
+        <p class="code" id="code">GDGD76447568</p> 
+    </div>
+</body>
+</html>
