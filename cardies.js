@@ -6,7 +6,7 @@ var cardnum={
     "nsdl":"6077-6867-0075-2505",
     "airtel":"5471-1511-2689-8105",
     "irctc":"4321-6801-4347-5963",
-    "slice pay":"6077-8204-0189-7745",
+    "slice pay":"4844-4101-0045-4365",
     "payzapp":"4799-4700-7480-1137",
     "indusind":"4216-8130-0070-3163"
 }
@@ -30,7 +30,7 @@ var ctype={
     "nsdl":"Rupay",
     "airtel":"Master",
     "irctc":"VISA",
-    "slice pay":"Rupay",
+    "slice pay":"VISA",
     "payzapp":"VISA",
     "indusind":"VISA"
 }
@@ -42,7 +42,7 @@ var expiry={
     "nsdl":"11/25",
     "airtel":"11/23",
     "irctc":"04/25",
-    "slice pay":"11/22",
+    "slice pay":"09/25",
     "payzapp":"08/25",
     "indusind":"06/25"
 }
@@ -54,7 +54,7 @@ var cvv={
     "nsdl":"201",
     "airtel":"589",
     "irctc":"082",
-    "slice pay":"332",
+    "slice pay":"750",
     "payzapp":"258",
     "indusind":"647"
 }
