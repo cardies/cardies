@@ -3,7 +3,7 @@ var cardnum={
     "kotak":"4594-5300-5609-1515",
     "paytm":"6080-3205-3823-8116",
     "axis":"4173-4900-0396-1568",
-    "fincare":"6080-8111-0545-4219",
+    "nsdl":"6077-6867-0075-2505",
     "airtel":"5471-1511-2689-8105",
     "irctc":"4321-6801-4347-5963",
     "slice pay":"6077-8204-0189-7745",
@@ -15,7 +15,7 @@ var bname={
     "kotak":"Kotak Mahindra Bank",
     "paytm":"Paytm Payments Bank",
     "axis":"Axis Bank",
-    "fincare":"Fincare Small Payments Bank",
+    "nsdl":"NSDL Jiffy Payments Bank",
     "airtel":"Airtel Payments Bank",
     "irctc":"Irctc E-Wallet Card",
     "slice pay":"Slice-Pay Credit Card",
@@ -27,7 +27,7 @@ var ctype={
     "kotak":"VISA",
     "paytm":"Rupay",
     "axis":"Axis Bank",
-    "fincare":"Rupay",
+    "nsdl":"Rupay",
     "airtel":"Master",
     "irctc":"VISA",
     "slice pay":"Rupay",
@@ -39,7 +39,7 @@ var expiry={
     "kotak":"04/24",
     "paytm":"11/27",
     "axis":"11/21",
-    "fincare":"12/26",
+    "nsdl":"11/25",
     "airtel":"11/23",
     "irctc":"04/25",
     "slice pay":"11/22",
@@ -51,7 +51,7 @@ var cvv={
     "kotak":"717",
     "paytm":"343",
     "axis":"116",
-    "fincare":"737",
+    "nsdl":"201",
     "airtel":"589",
     "irctc":"082",
     "slice pay":"332",
@@ -63,7 +63,7 @@ var ano={
     "kotak":"7413145953",
     "paytm":"917993051220",
     "axis":"0000000000",
-    "fincare":"190003491423",
+    "nsdl":"501001085896",
     "airtel":"7993051220",
     "irctc":"0000000000",
     "slice pay":"0000000000",
@@ -75,14 +75,14 @@ var code={
     "kotak":"KKBK0007869",
     "paytm":"PYTM023456",
     "axis":"0000000000",
-    "fincare":"FSFB0000001",
+    "nsdl":"NSPB0000002",
     "airtel":"7993051220",
     "irctc":"0000000000",
     "slice pay":"0000000000",
     "payzapp":"7993051220",
     "indusind":"INDB0000876"
 }
-var lister=["sbi","kotak","paytm","fincare","indusind"];
+var lister=["sbi","kotak","paytm","nsdl","indusind"];
 var came,cardnumber,exp,cv1,e1,nm,stri="";
 function auth(){
     var ss=document.getElementById("passwd").value;
@@ -96,7 +96,7 @@ $(document).ready(function(){
         $(".cards").addClass("hide");
         $(".card").removeClass("hide");
         $(".back").removeClass("hide");
-        if(came=="sbi"||came=="fincare"||came=="paytm"||came=="kotak"||came=="indusind"){
+        if(came=="sbi"||came=="nsdl"||came=="paytm"||came=="kotak"||came=="indusind"){
         $(".details").removeClass("hide");
         }
         else{
@@ -119,7 +119,7 @@ function carddet(){
         document.getElementById("expiry").innerHTML=expiry[came];
         document.getElementById("cvv").innerHTML=cvv[came];
         document.getElementById("cnum").innerHTML=cardnum[came];
-        if(came=="sbi"||came=="fincare"||came=="paytm"||came=="kotak"||came=="indusind"){
+        if(came=="sbi"||came=="nsdl"||came=="paytm"||came=="kotak"||came=="indusind"){
         document.getElementById("ano").innerHTML=ano[came];
         document.getElementById("code").innerHTML=code[came];
         }
