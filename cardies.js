@@ -8,7 +8,8 @@ var cardnum={
     "irctc":"4321-6801-4347-5963",
     "slice pay":"4844-4101-0045-4365",
     "payzapp":"4799-4700-7480-1137",
-    "indusind":"4216-8130-0070-3163"
+    "indusind":"4216-8130-0070-3163",
+    "mobi":"3782-553353-32478"
 }
 var bname={
     "sbi":"State Bank Of India",
@@ -20,7 +21,8 @@ var bname={
     "irctc":"Irctc E-Wallet Card",
     "slice pay":"Slice-Pay Credit Card",
     "payzapp":"PAYZAPP E-Wallet Card",
-    "indusind":"Indusind Bank"
+    "indusind":"Indusind Bank",
+    "mobi":"Mobikwick Pre-Paid Card"
 }
 var ctype={
     "sbi":"Rupay",
@@ -32,7 +34,8 @@ var ctype={
     "irctc":"VISA",
     "slice pay":"VISA",
     "payzapp":"VISA",
-    "indusind":"VISA"
+    "indusind":"VISA",
+    "mobi":"AMERICAN EXPRESS"
 }
 var expiry={
     "sbi":"10/27",
@@ -44,7 +47,8 @@ var expiry={
     "irctc":"04/25",
     "slice pay":"09/25",
     "payzapp":"08/25",
-    "indusind":"06/25"
+    "indusind":"06/25",
+    "mobi":"08/25"
 }
 var cvv={
     "sbi":"488",
@@ -56,7 +60,8 @@ var cvv={
     "irctc":"082",
     "slice pay":"750",
     "payzapp":"258",
-    "indusind":"647"
+    "indusind":"647",
+    "mobi":"4769"
 }
 var ano={
     "sbi":"38904786063",
