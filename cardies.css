@@ -8,9 +8,8 @@
 }
 body{
     display: flex;
-    background-color: #000000;
-    background-image: linear-gradient(315deg, #000000 0%, #b82e1f 74%);
-    background-repeat: no-repeat;
+    background-color: #7ee8fa;
+    background-image:linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
     background-position: center;
     background-attachment: fixed;
     align-items: center;
@@ -45,8 +44,8 @@ body{
     font-weight: 500;
 }
 .selop{
-    background-color: #522222;
-    background-image: linear-gradient(315deg, #000000 0%, #b82e1f 74%);
+    background-color: #7ee8fa;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
 color:white;
 border-radius: 1px;
 }
