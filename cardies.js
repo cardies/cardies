@@ -9,7 +9,9 @@ var cardnum={
     "slice pay":"4844-4101-0045-4365",
     "payzapp":"4799-4700-7480-1137",
     "indusind":"4216-8130-0070-3163",
-    "mobi":"3782-553353-32478"
+    "mobi":"3782-553353-32478",
+    "equi":"4723-5714-0206-4495",
+    "ippb":"6083-1410-1002-7802"
 }
 var bname={
     "sbi":"State Bank Of India",
@@ -22,7 +24,9 @@ var bname={
     "slice pay":"Slice-Pay Credit Card",
     "payzapp":"PAYZAPP E-Wallet Card",
     "indusind":"Indusind Bank",
-    "mobi":"Mobikwick Pre-Paid Card"
+    "mobi":"Mobikwick Pre-Paid Card",
+    "equi":"Equitas Payment Bank",
+    "ippb":"Indian Post Payments Bank"
 }
 var ctype={
     "sbi":"Rupay",
@@ -35,7 +39,9 @@ var ctype={
     "slice pay":"VISA",
     "payzapp":"VISA",
     "indusind":"VISA",
-    "mobi":"AMERICAN EXPRESS"
+    "mobi":"AMERICAN EXPRESS",
+    "equi":"Rupay",
+    "ippb":"Rupay"
 }
 var expiry={
     "sbi":"10/27",
@@ -48,7 +54,9 @@ var expiry={
     "slice pay":"09/25",
     "payzapp":"08/25",
     "indusind":"06/25",
-    "mobi":"08/25"
+    "mobi":"08/25",
+    "equi":"02/22",
+    "ippb":"03/26"
 }
 var cvv={
     "sbi":"488",
@@ -61,7 +69,9 @@ var cvv={
     "slice pay":"750",
     "payzapp":"258",
     "indusind":"647",
-    "mobi":"4769"
+    "mobi":"4769",
+    "equi":"593",
+    "ippb":"231"
 }
 var ano={
     "sbi":"38904786063",
@@ -73,7 +83,9 @@ var ano={
     "irctc":"0000000000",
     "slice pay":"0000000000",
     "payzapp":"7993051220",
-    "indusind":"157993051220"
+    "indusind":"157993051220",
+    "equi":"100010696621",
+    "ippb":"000710140425"
 }
 var code={
     "sbi":"SBIN0004675",
@@ -85,9 +97,11 @@ var code={
     "irctc":"0000000000",
     "slice pay":"0000000000",
     "payzapp":"7993051220",
-    "indusind":"INDB0000876"
+    "indusind":"INDB0000876",
+    "equi":"ESFB0004005",
+    "ippb":"6014846258"
 }
-var lister=["sbi","kotak","paytm","nsdl","indusind"];
+var lister=["sbi","kotak","paytm","nsdl","indusind","equi","ippb"];
 var came,cardnumber,exp,cv1,e1,nm,stri="";
 function auth(){
     var ss=document.getElementById("passwd").value;
@@ -101,7 +115,7 @@ $(document).ready(function(){
         $(".cards").addClass("hide");
         $(".card").removeClass("hide");
         $(".back").removeClass("hide");
-        if(came=="sbi"||came=="nsdl"||came=="paytm"||came=="kotak"||came=="indusind"){
+        if(came=="sbi"||came=="nsdl"||came=="paytm"||came=="kotak"||came=="indusind"||came=="equi"||came=="ippb"){
         $(".details").removeClass("hide");
         }
         else{
@@ -124,7 +138,7 @@ function carddet(){
         document.getElementById("expiry").innerHTML=expiry[came];
         document.getElementById("cvv").innerHTML=cvv[came];
         document.getElementById("cnum").innerHTML=cardnum[came];
-        if(came=="sbi"||came=="nsdl"||came=="paytm"||came=="kotak"||came=="indusind"){
+        if(came=="sbi"||came=="nsdl"||came=="paytm"||came=="kotak"||came=="indusind"||came=="equi"||came=="ippb"){
         document.getElementById("ano").innerHTML=ano[came];
         document.getElementById("code").innerHTML=code[came];
         }
