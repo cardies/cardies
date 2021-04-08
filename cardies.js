@@ -1,7 +1,7 @@
 var cardnum={
     "sbi":"6074-3102-1451-2692",
     "kotak":"4594-5300-5609-1515",
-    "paytm":"6080-3205-3823-8116",
+    "paytm":"4389-7600-3540-4617",
     "axis":"4173-4900-0396-1568",
     "nsdl":"6077-6867-0075-2505",
     "airtel":"5471-1511-2689-8105",
@@ -31,7 +31,7 @@ var bname={
 var ctype={
     "sbi":"Rupay",
     "kotak":"VISA",
-    "paytm":"Rupay",
+    "paytm":"VISA",
     "axis":"Axis Bank",
     "nsdl":"Rupay",
     "airtel":"Master",
@@ -46,7 +46,7 @@ var ctype={
 var expiry={
     "sbi":"10/27",
     "kotak":"04/24",
-    "paytm":"11/27",
+    "paytm":"04/29",
     "axis":"11/21",
     "nsdl":"11/25",
     "airtel":"11/23",
@@ -61,7 +61,7 @@ var expiry={
 var cvv={
     "sbi":"488",
     "kotak":"717",
-    "paytm":"343",
+    "paytm":"150",
     "axis":"116",
     "nsdl":"201",
     "airtel":"589",
